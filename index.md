@@ -116,6 +116,7 @@ environments with remote sensing and Volunteered Geographic Information. 6-month
 * Trees, Forests and People [link to journal](https://www.sciencedirect.com/journal/trees-forests-and-people)
 * Environmental Monitoring and Assessment [link to journal](https://link.springer.com/journal/10661)
 * Nature Scientific Data [link to journal](https://www.nature.com/sdata/)
+* Urban Ecosystems [link to journal](https://link.springer.com/journal/11252)
 
 ## GIS Courses and Workshops attended
 
