@@ -10,6 +10,8 @@ highlight: Klobucar, B.
 links:
   - label: Email
     url: mailto:blaz.klobucar@gmail.com
+  - label: ORCID
+    url: https://orcid.org/0000-0002-3155-3658
   - label: ResearchGate
     url: https://www.researchgate.net/profile/Blaz-Klobucar-2
   - label: LinkedIn
@@ -28,7 +30,7 @@ He completed his doctorate at SLU in 2021, supervised by a Nordic team spanning 
 
 ## Positions
 
-`Current` **Researcher**, Department of Landscape Architecture, Planning and Management, Swedish University of Agricultural Sciences (SLU), Alnarp
+`2023–now` **Researcher**, Department of Landscape Architecture, Planning and Management, Swedish University of Agricultural Sciences (SLU), Alnarp
 
 `Current` Sentinel Hub Partner
 
@@ -50,8 +52,8 @@ He completed his doctorate at SLU in 2021, supervised by a Nordic team spanning 
 ## Grants
 
 ### Formas (Swedish Research Council for Sustainable Development)
-* `2023` Early-career researcher grant, 4 years, as project leader: "Historical urban tree cover change and the potential implications for sustainable urban planning"
-* `2016` Open call, 3-year grant that funded the doctoral project "Ecosystem services of private residential urban trees"; contributed to writing the application
+* `2023` Early-career researcher grant, 4 MSEK over 4 years, as project leader: "Historical urban tree cover change and the potential implications for sustainable urban planning"
+* `2016` Open call, 3 MSEK over 3 years, funding the doctoral project "Ecosystem services of private residential urban trees"; contributed to writing the application
 
 ### FOMA (Environmental monitoring and analysis, SLU)
 * `2023` Urban Tree Detection in Historical Aerial Imagery of Sweden. 6-month grant. [Report](https://publications.slu.se/?file=publ/show&id=129259)
@@ -88,14 +90,16 @@ He completed his doctorate at SLU in 2021, supervised by a Nordic team spanning 
 * Planeringens grunden (Introduction to planning)
 * Advanced Digital Landscape Analysis with GIS
 
-### Pedagogical training
+### Supervision
+* Bachelor's thesis of Alice Liu Karsvall (supervisor)
 
-`2014–now` Courses in higher education teaching:
-* Teaching in Higher Education, basic course
+### Pedagogical training
+* Course in Doctoral Supervision (ongoing)
+* Teaching in Higher Education, basic course (autumn 2025)
 * Course in Grading and Assessment
-* Course in Doctoral Supervision
 
 ## Presentations
+* `May 2026` European Forum on Urban Forestry (EFUF), Malmö, Sweden. Presentation: Tree Crown Detection on Historical Orthophoto Images: A Comprehensive Review
 * `July 2022` Sinergise Summer School, Ljubljana, Slovenia. Workshop: Earth Observation – from satellite imagery to modern applications
 * `2019, 2021` Träddagarna (Swedish Tree Association Conference). Presentation: Residential urban trees of Malmö
 * `2018` European i-Tree Conference, Malmö, Sweden. Presentation: i-Tree for ecosystem services of private residential trees
