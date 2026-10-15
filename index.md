@@ -91,12 +91,12 @@ He completed his doctorate at SLU in 2021, supervised by a Nordic team spanning 
 * Advanced Digital Landscape Analysis with GIS
 
 ### Supervision
-* Bachelor's thesis of Alice Liu Karsvall (supervisor)
+* Alice Liu Karsvall, Bachelor's programme Forest and Landscape. Thesis: _Where the farm became forest: a design vision for a nature-based healing cohousing community in Sweden_
 
 ### Pedagogical training
 * Course in Doctoral Supervision (ongoing)
 * Teaching in Higher Education, basic course (autumn 2025)
-* Course in Grading and Assessment
+* Course in Grading and Assessment (2025)
 
 ## Presentations
 * `May 2026` European Forum on Urban Forestry (EFUF), Malmö, Sweden. Presentation: Tree Crown Detection on Historical Orthophoto Images: A Comprehensive Review
