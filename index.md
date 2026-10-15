@@ -22,13 +22,9 @@ PhD in Landscape Planning
 
 ## Short Bio
 
-Passionate about the intersection of urban ecosystems and sustainable development, I am an urban forestry researcher with expertise in landscape planning, remote sensing, and interdisciplinary research methodologies. With a keen interest in the dynamics between urban environments and their ecological systems, my work focuses on harnessing cutting-edge remote sensing techniques to study and manage urban forests.
+Blaz Klobucar is a researcher at the Swedish University of Agricultural Sciences (SLU), Department of Landscape Architecture, Planning and Management in Alnarp, where he works in a research group focused on the governance and management of urban green infrastructure.
 
-My academic background encompasses a blend of environmental science, forestry, and urban planning, providing me with a holistic perspective on urban landscapes. Through interdisciplinary collaboration, I aim to develop innovative strategies for urban forest management and green infrastructure planning that enhance the resilience and sustainability of cities.
-
-With a track record of conducting research projects that bridge the gap between theory and practice, I am committed to generating actionable insights that inform evidence-based decision-making in urban planning and environmental management. My dedication to fostering sustainable urban development drives my ongoing pursuit of novel methodologies and approaches in the field of urban forestry.
-
-As a researcher, I am enthusiastic about leveraging my expertise to address pressing challenges related to urbanization, biodiversity conservation, and climate change adaptation. I am adept at communicating complex scientific concepts to diverse audiences and thrive in collaborative environments where diverse perspectives converge to create impactful solutions.
+He completed his doctorate at SLU in 2021, supervised by a Nordic team spanning urban forestry management and remote sensing. Since then he has built a research profile that combines quantitative remote sensing with the planning and management context in which urban tree data are used.
 
 ## Currently
 
@@ -83,12 +79,14 @@ Assessments of urban vegetation and change detection; governance and management 
 `2014-now` **Pedagogical qualifications**:
 * Course in Grading and Assessment
 * Teaching in Higher Education, basic course
+* Course in Doctoral Supervision
 
 
 
 
 ## Scientific Publications
 
+* Skogh, S., Klich, C., Norberg, H., Klobucar, B., in press. Viewing Trees in Dimension: LiDAR as Decision-making Support in Spatial Planning. _Urban Forestry & Urban Greening_
 * [Klobucar, B., 2021. Residential Urban Forest Assessment Methodologies: A Management Perspective. Doctoral thesis](https://pub.epsilon.slu.se/23487/3/klobucar_b_210517.pdf)
 * [Klobucar, B., Östberg, J., Wiström, B., Jansson, M., 2021. Residential urban trees – socio-ecological factors affecting tree and shrub abundance in the city of Malmö, Sweden. _Urban Forestry & Urban Greening_](https://www.sciencedirect.com/science/article/pii/S1618866721001436?via%3Dihub)
 * [Klobucar, B., Sang, N., Randrup, T. B., 2021. Comparing ground and remotely sensed measurements of urban tree canopy in private residential property. _Trees, Forests and People_](https://www.sciencedirect.com/science/article/pii/S2666719321000534)
