@@ -45,7 +45,7 @@ He completed his doctorate at SLU in 2021, supervised by a Nordic team spanning 
 ## Research
 
 * Urban tree canopy change from historical black-and-white aerial photographs, mapped with deep learning
-* LiDAR-based tree crown segmentation as decision support in spatial planning
+* LiDAR-based tree crown segmentation
 * Residential urban forests: tree structure, ecosystem services and socio-ecological drivers
 * Governance and management of urban green infrastructure, including long-term urban tree monitoring and nature-based solutions
 
