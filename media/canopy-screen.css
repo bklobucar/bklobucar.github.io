@@ -240,26 +240,19 @@ li.dated::before { content: none; }
 
 /* ---------- particular sections (ids come from the ## heading text) ---------- */
 
-#skills + .section-body ul {
-  columns: 2;
-  column-gap: 2rem;
-}
-
-#skills + .section-body li { break-inside: avoid; }
-
-#scientific-publications + .section-body li {
+#publications + .section-body li {
   margin-bottom: 0.9rem;
   padding-left: 0;
 }
 
-#scientific-publications + .section-body li::before { content: none; }
+#publications + .section-body li::before { content: none; }
 
-#scientific-publications + .section-body a {
+#publications + .section-body a {
   text-decoration-thickness: 0.08em;
   text-decoration-color: var(--wash-deep);
 }
 
-#scientific-publications + .section-body a:hover {
+#publications + .section-body a:hover {
   text-decoration-color: var(--ink);
   text-decoration-thickness: 0.12em;
 }
@@ -282,7 +275,7 @@ li.dated::before { content: none; }
 
 /* ---------- narrow screens ---------- */
 
-@media (max-width: 50rem) {
+@media screen and (max-width: 50rem) {
   :root {
     --fs: 1.0625rem;
     --label: 6.5rem;
@@ -350,8 +343,4 @@ li.dated::before { content: none; }
   }
 
   .dated + ul { margin-left: 0; }
-}
-
-@media (max-width: 30rem) {
-  #skills + .section-body ul { columns: 1; }
 }
