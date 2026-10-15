@@ -1,0 +1,75 @@
+/* canopy — print / Save as PDF. Reuses the screen design, sized for A4. */
+@import url("canopy-screen.css");
+
+@page {
+  size: A4;
+  margin: 14mm 15mm 15mm;
+}
+
+html { font-size: 8.4pt; }
+
+:root {
+  --paper: #fff;
+  --label: 30mm;
+  --measure: 132mm;
+  --gap: 7mm;
+  --date: 20mm;
+}
+
+body {
+  -webkit-print-color-adjust: exact;
+  print-color-adjust: exact;
+}
+
+.page {
+  max-width: none;
+  padding: 0;
+}
+
+.masthead { margin-bottom: 7mm; }
+
+.masthead-text h1 { font-size: 30pt; }
+.masthead-text p { font-size: 12pt; }
+
+.portrait { margin: 0 2mm; }
+
+.fiducials {
+  inset: -1.5mm;
+  width: calc(100% + 3mm);
+  height: calc(100% + 3mm);
+}
+
+/* show where each contact link goes */
+.links {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  gap: 0.5mm 4mm;
+  margin-top: 4mm;
+  font-weight: 400;
+}
+
+.links li { display: contents; }
+.links a { font-weight: 500; color: var(--muted); }
+.print-url { display: block; }
+
+a { text-decoration: none; }
+
+.cv-section {
+  padding: 4.5mm 0;
+}
+
+.cv-section h2 {
+  position: static;
+  break-after: avoid;
+}
+
+.section-body h3 { break-after: avoid; }
+
+li,
+.dated {
+  break-inside: avoid;
+}
+
+.dated + ul { break-before: avoid; }
+
+.colophon { padding-top: 3mm; }

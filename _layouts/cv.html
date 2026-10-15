@@ -1,17 +1,74 @@
 <!doctype html>
-<html>
+<html lang="{{ page.lang | default: 'en' }}">
 <head>
-  <meta charset=utf-8 />
-  <title> {% if page.title %} {{ page.title }} | {% endif %} CV</title>
-  <link href="media/{{ site.style }}-screen.css" type="text/css" rel="stylesheet" media="screen">
-  <link href="media/{{ site.style }}-print.css" type="text/css" rel="stylesheet" media="print">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="light">
+  <title>{% if page.title %}{{ page.title }}{% else %}CV{% endif %}</title>
+  {% if page.description %}<meta name="description" content="{{ page.description | xml_escape }}">
+  <meta property="og:description" content="{{ page.description | xml_escape }}">{% endif %}
+  <meta property="og:title" content="{{ page.title | default: 'CV' | xml_escape }}">
+  <meta property="og:type" content="profile">
+  {% if page.photo %}<meta property="og:image" content="{{ page.photo | absolute_url }}">{% endif %}
+  <link rel="icon" type="image/png" href="{{ 'media/favicon.png' | relative_url }}">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Alegreya:ital,wght@0,400..800;1,400..800&family=Alegreya+Sans:ital,wght@0,400;0,500;0,700;1,400;1,500&display=swap">
+  <link rel="stylesheet" href="{{ 'media/' | append: site.style | append: '-screen.css' | relative_url }}" media="screen">
+  <link rel="stylesheet" href="{{ 'media/' | append: site.style | append: '-print.css' | relative_url }}" media="print">
 </head>
 <body>
-  <img src="https://raw.githubusercontent.com/blazklobucar/markdown-cv/gh-pages/media/pfp_image.png" alt="Profile Image" id="profile-image">
-  <div id="main">
-    <div id="content">
-    {{ content }}
+{%- comment -%}
+  index.md stays plain Markdown. This layout:
+  - puts everything before the first "##" heading (name + subtitle) in the masthead,
+  - wraps each "##" section so its heading sits in the left column,
+  - marks paragraphs and list items that start with a `date` so dates line up in a gutter,
+  - bolds page.highlight (your name) wherever it appears, e.g. in publications.
+{%- endcomment -%}
+{%- assign html = content | replace: '<p><code', '<p class="dated"><code' | replace: '<li><code', '<li class="dated"><code' -%}
+{%- if page.highlight -%}
+  {%- assign me = '<strong class="me">' | append: page.highlight | append: '</strong>' -%}
+  {%- assign html = html | replace: page.highlight, me -%}
+{%- endif -%}
+{%- assign parts = html | split: '<h2' %}
+<div class="page">
+  <header class="masthead">
+    {%- if page.photo %}
+    <figure class="portrait">
+      <img src="{{ page.photo | relative_url }}" alt="{{ page.photo_alt | default: 'Portrait' }}" width="480" height="480">
+      <svg class="fiducials" viewBox="0 0 100 100" aria-hidden="true" focusable="false">
+        <g fill="none" stroke="currentColor" stroke-width="1" vector-effect="non-scaling-stroke">
+          <path d="M1 4h6M4 1v6M93 4h6M96 1v6M1 96h6M4 93v6M93 96h6M96 93v6" vector-effect="non-scaling-stroke"/>
+          <path d="M50 0v3.5M50 100v-3.5M0 50h3.5M100 50h-3.5" vector-effect="non-scaling-stroke"/>
+        </g>
+      </svg>
+    </figure>
+    {%- endif %}
+    <div class="masthead-text">
+      {{ parts[0] }}
+      {%- if page.links %}
+      <ul class="links">
+        {%- for link in page.links %}
+        <li><a href="{{ link.url }}">{{ link.label }}</a><span class="print-url">{{ link.url | remove: 'mailto:' | remove: 'https://' | remove: 'http://' | remove: 'www.' }}</span></li>
+        {%- endfor %}
+      </ul>
+      {%- endif %}
     </div>
-  </div>
+  </header>
+
+  <main>
+    {%- for part in parts offset:1 %}
+    {%- assign bits = part | split: '</h2>' %}
+    <section class="cv-section">
+      <h2{{ bits[0] }}</h2>
+      <div class="section-body">{{ bits[1] }}</div>
+    </section>
+    {%- endfor %}
+  </main>
+
+  <footer class="colophon">
+    <p>Last updated {{ site.time | date: "%-d %B %Y" }}</p>
+  </footer>
+</div>
 </body>
 </html>

@@ -1,20 +1,24 @@
 ---
 layout: cv
 title: Blaz Klobucar's CV
+description: Urban forestry researcher at the Swedish University of Agricultural Sciences (SLU), working with remote sensing and spatial analysis of urban trees.
+photo: media/portrait.jpg
+photo_alt: Ink-and-wash portrait drawing of Blaz Klobucar
+# Your name as it appears in author lists; it is set in bold wherever it occurs.
+highlight: Klobucar, B.
+# Contact links shown under your name (on paper, the addresses are printed too).
+links:
+  - label: Email
+    url: mailto:blaz.klobucar@gmail.com
+  - label: ResearchGate
+    url: https://www.researchgate.net/profile/Blaz-Klobucar-2
+  - label: LinkedIn
+    url: https://www.linkedin.com/in/blazklobucar/
+  - label: Blog
+    url: https://medium.com/@blazklobucar
 ---
 # Blaz Klobucar
 PhD in Landscape Planning
-
-## Contact and Socials
-
-[BLOG](https://medium.com/@blazklobucar)
-
-[Email](mailto:blaz.klobucar@gmail.com)
-
-[ResearchGate profile](https://www.researchgate.net/profile/Blaz-Klobucar-2)
-
-[LinkedIn profile](https://www.linkedin.com/in/blazklobucar/)
-
 
 ## Short Bio
 
@@ -32,7 +36,7 @@ As a researcher, I am enthusiastic about leveraging my expertise to address pres
 Researcher at Swedish University of Agricultural Sciences / Sentinel Hub Partner
 
 
-## Expertise in:
+## Expertise
 
 Urban Forestry, Remote Sensing, Spatial Analysis, GIS
 
@@ -51,7 +55,7 @@ Assessments of urban vegetation and change detection; governance and management 
 * Remote sensing
 * Spatial analysis and digitalization
 * Public speaking and presentation
-* Slovene, Swedish, English language professional proeficiency
+* Slovene, Swedish, English language professional proficiency
 
 
 ## Education
@@ -107,16 +111,16 @@ Assessments of urban vegetation and change detection; governance and management 
 
 ### FOMA (Environmental monitoring and analysis)
 * `2022` Monitoring the provision and condition of high‐value restorative outdoor
-environments with remote sensing and Volunteered Geographic Information. 6-month grant. [link to report](https://publications.slu.se/?file=publ/show&id=127532&lang=en)
-* `2023` Urban Tree Detection in Historical Aerial Imagery of Sweden. 6-month grant. [link to report](https://publications.slu.se/?file=publ/show&id=129259)
+environments with remote sensing and Volunteered Geographic Information. 6-month grant. [Report](https://publications.slu.se/?file=publ/show&id=127532&lang=en)
+* `2023` Urban Tree Detection in Historical Aerial Imagery of Sweden. 6-month grant. [Report](https://publications.slu.se/?file=publ/show&id=129259)
 
-## Reviewer at the following international peer-review journals:
+## Peer reviewer for
 
-* Urban Forestry & Urban Greening [link to journal](https://www.sciencedirect.com/journal/urban-forestry-and-urban-greening)
-* Trees, Forests and People [link to journal](https://www.sciencedirect.com/journal/trees-forests-and-people)
-* Environmental Monitoring and Assessment [link to journal](https://link.springer.com/journal/10661)
-* Nature Scientific Data [link to journal](https://www.nature.com/sdata/)
-* Urban Ecosystems [link to journal](https://link.springer.com/journal/11252)
+* [Urban Forestry & Urban Greening](https://www.sciencedirect.com/journal/urban-forestry-and-urban-greening)
+* [Trees, Forests and People](https://www.sciencedirect.com/journal/trees-forests-and-people)
+* [Environmental Monitoring and Assessment](https://link.springer.com/journal/10661)
+* [Nature Scientific Data](https://www.nature.com/sdata/)
+* [Urban Ecosystems](https://link.springer.com/journal/11252)
 
 ## GIS Courses and Workshops attended
 
@@ -125,7 +129,7 @@ environments with remote sensing and Volunteered Geographic Information. 6-month
 (GIS, GPS, Digitalization, database management, Remote sensing for environmental science and natural resource management)
 * Introduction to applied spatial statistics, SLU Umeå (Nearest neighbor summary statistics, Spatial point pattern analysis using R)
 * Advanced Digital Landscape Analysis, SLU Alnarp (Geodesign, Landscape modelling, Landscape analysis)
-* Spatial Statistics and Remote Sensing for Doctoral Researchers, SLU Alnarp (Remote sensing for urban vegetation, Atmospheric correction and supervised classification, Spatial sampling design, Spatial regression methods
+* Spatial Statistics and Remote Sensing for Doctoral Researchers, SLU Alnarp (Remote sensing for urban vegetation, Atmospheric correction and supervised classification, Spatial sampling design, Spatial regression methods)
 
 ### ESRI Training MOOC Certificates
 * Cartography
@@ -140,13 +144,3 @@ environments with remote sensing and Volunteered Geographic Information. 6-month
 
   
 <!-- A list is also available [online](http://scholar.google.co.uk/citations?user=LTOTl0YAAAAJ) -->
-
-
-
-
-
-<!-- ### Footer
-
-Last updated: November 2023 -->
-
-

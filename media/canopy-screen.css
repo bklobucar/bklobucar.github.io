@@ -1,0 +1,357 @@
+/* canopy — CV stylesheet
+   Colours are taken from the portrait: its brush ink and its watercolour wash. */
+
+:root {
+  --paper: #fbfcfa;
+  --text: #1d2620;
+  --ink: #204022;        /* the drawing's ink */
+  --wash: #b2d1b6;       /* the drawing's wash */
+  --wash-soft: #e2ede3;
+  --wash-deep: #7fa888;
+  --muted: #59675d;
+
+  --serif: "Alegreya", Georgia, "Times New Roman", serif;
+  --sans: "Alegreya Sans", "Gill Sans", "Segoe UI", system-ui, sans-serif;
+
+  --fs: 1.125rem;        /* body size */
+  --lh: 1.55;
+  --label: 12.75rem;     /* left column: portrait + section headings */
+  --measure: 36rem;      /* right column: ~75 characters */
+  --gap: clamp(1.5rem, 4vw, 3.25rem);
+  --date: 7.5rem;        /* gutter for dates inside the right column */
+}
+
+*, *::before, *::after { box-sizing: border-box; }
+
+html {
+  -webkit-text-size-adjust: 100%;
+  text-size-adjust: 100%;
+}
+
+body {
+  margin: 0;
+  background: var(--paper);
+  color: var(--text);
+  font-family: var(--sans);
+  font-size: var(--fs);
+  line-height: var(--lh);
+  font-kerning: normal;
+  -webkit-font-smoothing: antialiased;
+}
+
+.page {
+  max-width: calc(var(--label) + var(--gap) + var(--measure) + 6rem);
+  margin: 0 auto;
+  padding: clamp(1.75rem, 6vw, 4.5rem) clamp(1rem, 5vw, 3rem) 3rem;
+}
+
+/* ---------- shared two-column grid ---------- */
+
+.masthead,
+.cv-section,
+.colophon {
+  display: grid;
+  grid-template-columns: var(--label) minmax(0, var(--measure));
+  column-gap: var(--gap);
+}
+
+/* ---------- masthead ---------- */
+
+.masthead {
+  align-items: center;
+  margin-bottom: clamp(2.5rem, 7vw, 4.5rem);
+}
+
+.portrait {
+  position: relative;
+  margin: 0;
+  color: var(--ink);
+}
+
+.portrait img {
+  display: block;
+  width: 100%;
+  height: auto;
+  /* the drawing's white paper drops out, so the ink sits on the page */
+  mix-blend-mode: multiply;
+}
+
+/* corner and edge marks, as on the frame of an aerial photograph */
+.fiducials {
+  position: absolute;
+  inset: -0.6rem;
+  width: calc(100% + 1.2rem);
+  height: calc(100% + 1.2rem);
+  opacity: 0.55;
+  pointer-events: none;
+}
+
+.masthead-text h1 {
+  margin: 0 0 0.4rem;
+  font-family: var(--serif);
+  font-weight: 500;
+  font-size: clamp(2.6rem, 1.6rem + 3.6vw, 4.6rem);
+  line-height: 0.98;
+  letter-spacing: -0.012em;
+  color: var(--ink);
+}
+
+.masthead-text p {
+  margin: 0;
+  font-size: 1.3rem;
+  line-height: 1.35;
+  color: var(--muted);
+}
+
+.links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.35rem 1.5rem;
+  margin: 1.25rem 0 0;
+  padding: 0;
+  list-style: none;
+  font-weight: 500;
+}
+
+.links li { margin: 0; padding: 0; }
+.links li::before { content: none; }
+.print-url { display: none; }
+
+/* ---------- links ---------- */
+
+a {
+  color: inherit;
+  text-decoration-line: underline;
+  text-decoration-color: var(--wash);
+  text-decoration-thickness: 0.2em;
+  text-underline-offset: 0.16em;
+  text-decoration-skip-ink: none;
+}
+
+a:hover {
+  color: var(--ink);
+  text-decoration-color: var(--ink);
+}
+
+a:focus-visible {
+  outline: 2px solid var(--ink);
+  outline-offset: 3px;
+  border-radius: 2px;
+}
+
+/* ---------- sections ---------- */
+
+.cv-section {
+  padding: 2rem 0;
+  border-top: 1px solid var(--wash-soft);
+}
+
+.cv-section h2 {
+  grid-column: 1;
+  align-self: start;
+  position: sticky;
+  top: 1.25rem;
+  margin: 0;
+  font-family: var(--serif);
+  font-weight: 600;
+  font-size: 1.25rem;
+  line-height: 1.25;
+  color: var(--ink);
+  text-wrap: balance;
+}
+
+.section-body {
+  grid-column: 2;
+  min-width: 0;
+}
+
+.section-body > :first-child { margin-top: 0; }
+.section-body > :last-child { margin-bottom: 0; }
+
+.section-body h3 {
+  margin: 1.75rem 0 0.5rem;
+  font-family: var(--sans);
+  font-weight: 700;
+  font-size: 1em;
+  line-height: var(--lh);
+  color: var(--text);
+}
+
+p { margin: 0 0 0.85rem; }
+
+em { font-style: italic; }
+strong { font-weight: 700; }
+
+/* dates are written as `2017-2021` in index.md */
+code {
+  font: inherit;
+  background: none;
+  padding: 0;
+}
+
+ul {
+  margin: 0 0 1.1rem;
+  padding: 0;
+  list-style: none;
+}
+
+li {
+  position: relative;
+  margin: 0 0 0.3rem;
+  padding-left: 1.15rem;
+}
+
+li::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: calc(var(--lh) * 0.5em - 1px);
+  width: 0.5rem;
+  height: 2px;
+  border-radius: 1px;
+  background: var(--wash-deep);
+}
+
+/* ---------- dated entries: date in a gutter, text aligned after it ---------- */
+
+.dated {
+  position: relative;
+  padding-left: var(--date);
+}
+
+li.dated { margin-bottom: 0.55rem; }
+li.dated::before { content: none; }
+
+.dated > code:first-child {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: calc(var(--date) - 1rem);
+  font-size: 0.95rem;
+  line-height: calc(var(--fs) * var(--lh));
+  font-weight: 500;
+  color: var(--muted);
+  font-variant-numeric: lining-nums tabular-nums;
+}
+
+.dated + ul {
+  margin-left: var(--date);
+}
+
+/* ---------- particular sections (ids come from the ## heading text) ---------- */
+
+#skills + .section-body ul {
+  columns: 2;
+  column-gap: 2rem;
+}
+
+#skills + .section-body li { break-inside: avoid; }
+
+#scientific-publications + .section-body li {
+  margin-bottom: 0.9rem;
+  padding-left: 0;
+}
+
+#scientific-publications + .section-body li::before { content: none; }
+
+#scientific-publications + .section-body a {
+  text-decoration-thickness: 0.08em;
+  text-decoration-color: var(--wash-deep);
+}
+
+#scientific-publications + .section-body a:hover {
+  text-decoration-color: var(--ink);
+  text-decoration-thickness: 0.12em;
+}
+
+.me { font-weight: 700; }
+
+/* ---------- footer ---------- */
+
+.colophon {
+  padding-top: 1.5rem;
+  border-top: 1px solid var(--wash-soft);
+  font-size: 0.95rem;
+  color: var(--muted);
+}
+
+.colophon p {
+  grid-column: 2;
+  margin: 0;
+}
+
+/* ---------- narrow screens ---------- */
+
+@media (max-width: 50rem) {
+  :root {
+    --fs: 1.0625rem;
+    --label: 6.5rem;
+  }
+
+  .masthead {
+    column-gap: 1.25rem;
+    align-items: center;
+  }
+
+  .masthead-text { display: contents; }
+
+  .masthead-text h1,
+  .masthead-text p {
+    grid-column: 2;
+  }
+
+  .masthead-text h1 {
+    align-self: end;
+    font-size: clamp(2.1rem, 9vw, 2.6rem);
+  }
+
+  .masthead-text p {
+    align-self: start;
+    font-size: 1.1rem;
+  }
+
+  .portrait { grid-row: 1 / span 2; }
+
+  .links {
+    grid-column: 1 / -1;
+    margin-top: 1.5rem;
+  }
+
+  .fiducials {
+    inset: -0.4rem;
+    width: calc(100% + 0.8rem);
+    height: calc(100% + 0.8rem);
+  }
+
+  .cv-section,
+  .colophon {
+    grid-template-columns: minmax(0, var(--measure));
+  }
+
+  .cv-section { padding: 1.6rem 0; }
+
+  .cv-section h2 {
+    position: static;
+    margin-bottom: 0.75rem;
+  }
+
+  .section-body,
+  .colophon p {
+    grid-column: 1;
+  }
+
+  .dated { padding-left: 0; }
+
+  .dated > code:first-child {
+    position: static;
+    display: block;
+    width: auto;
+    line-height: 1.4;
+  }
+
+  .dated + ul { margin-left: 0; }
+}
+
+@media (max-width: 30rem) {
+  #skills + .section-body ul { columns: 1; }
+}
