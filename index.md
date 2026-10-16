@@ -106,6 +106,10 @@ He completed his doctorate at SLU in 2021, supervised by a Nordic team spanning 
 * `2018` International Society of Arboriculture (ISA) Annual Conference, Columbus, Ohio. Presentation: Residential urban trees of Malmö
 * `2017` Green Surge Conference, Malmö, Sweden. Presentation: Residential urban trees of Malmö
 
+## Media
+* `2026` _Ugriznimo znanost_, RTV Slovenija (television). Featured in the episode [Drevesa v mestu (Trees in the city)](https://www.rtvslo.si/rtv365/arhiv/175256949?s=tv)
+* `April 2022` N1 Slovenija. Interview: [“Vsakič, ko v mestu pogledate skozi okno, bi morali videti vsaj tri drevesa” (Every time you look out of a window in the city, you should see at least three trees)](https://n1info.si/poglobljeno/vsakic-ko-v-mestu-pogledate-skozi-okno-bi-morali-videti-vsaj-tri-drevesa/)
+
 ## Peer reviewer for
 
 * [Urban Forestry & Urban Greening](https://www.sciencedirect.com/journal/urban-forestry-and-urban-greening)
