@@ -34,7 +34,7 @@ He completed his doctorate at SLU in 2021, supervised by a Nordic team spanning 
 
 `Current` Sentinel Hub Partner
 
-`Jan–Jun 2018` **Guest researcher**, USDA Forest Service, Northern Research Station, Syracuse, NY
+`Jan–Jun 2018` **Guest researcher**, USDA Forest Service, Northern Research Station, Syracuse, NY, with the i-Tree development team led by David Nowak
 
 ## Education
 
@@ -121,7 +121,9 @@ He completed his doctorate at SLU in 2021, supervised by a Nordic team spanning 
 ## Skills
 * Deep learning for image segmentation (Python)
 * LiDAR point clouds and tree crown segmentation
-* R for statistics and urban tree inventory analysis
+* Urban tree inventories and spatial sampling design
+* i-Tree for assessing urban forest structure and ecosystem services
+* R for statistics and data analysis
 * QGIS, ArcGIS Pro
 * Remote sensing and spatial analysis
 * Science communication and public speaking
