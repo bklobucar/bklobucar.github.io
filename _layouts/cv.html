@@ -11,6 +11,8 @@
   <meta property="og:title" content="{{ page.title | default: 'CV' | xml_escape }}">
   <meta property="og:type" content="profile">
   {% if page.photo %}<meta property="og:image" content="{{ page.photo | absolute_url }}">{% endif %}
+  <link rel="canonical" href="{{ page.url | absolute_url }}">
+  {% if page.schema %}<script type="application/ld+json">{{ page.schema | jsonify }}</script>{% endif %}
   <link rel="icon" type="image/png" href="{{ 'media/favicon.png' | relative_url }}">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -52,6 +54,7 @@
         {%- for link in page.links %}
         <li><a href="{{ link.url }}">{{ link.label }}</a><span class="print-url">{{ link.url | remove: 'mailto:' | remove: 'https://' | remove: 'http://' | remove: 'www.' }}</span></li>
         {%- endfor %}
+        <li class="pdf-link"><button type="button" onclick="window.print()">Save as PDF</button></li>
       </ul>
       {%- endif %}
     </div>

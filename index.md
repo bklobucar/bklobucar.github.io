@@ -1,7 +1,7 @@
 ---
 layout: cv
-title: Blaz Klobucar's CV
-description: Researcher in urban forestry and remote sensing at the Swedish University of Agricultural Sciences (SLU), Alnarp.
+title: Blaz Klobucar – urban forestry and remote sensing researcher at SLU
+description: Blaz Klobucar (Blaž Klobučar), researcher in urban forestry and remote sensing at the Swedish University of Agricultural Sciences (SLU), Alnarp.
 photo: media/portrait.jpg
 photo_alt: Ink-and-wash portrait drawing of Blaz Klobucar
 # Your name as it appears in author lists; it is set in bold wherever it occurs.
@@ -16,15 +16,34 @@ links:
     url: https://www.researchgate.net/profile/Blaz-Klobucar-2
   - label: LinkedIn
     url: https://www.linkedin.com/in/blazklobucar/
-  - label: Blog
-    url: https://medium.com/@blazklobucar
+  - label: GitHub
+    url: https://github.com/bklobucar
+# Machine-readable profile for search engines (schema.org). Not shown on the page.
+schema:
+  "@context": https://schema.org
+  "@type": Person
+  name: Blaz Klobucar
+  alternateName: Blaž Klobučar
+  jobTitle: Researcher in urban forestry and remote sensing
+  affiliation:
+    "@type": CollegeOrUniversity
+    name: Swedish University of Agricultural Sciences (SLU)
+  url: https://bklobucar.github.io/
+  image: https://bklobucar.github.io/media/portrait.jpg
+  knowsAbout: [Urban forestry, Remote sensing, Deep learning, LiDAR, i-Tree]
+  sameAs:
+    - https://orcid.org/0000-0002-3155-3658
+    - https://www.researchgate.net/profile/Blaz-Klobucar-2
+    - https://www.linkedin.com/in/blazklobucar/
+    - https://github.com/bklobucar
+    - https://www.slu.se/profilsidor/k/blaz-klobucar/
 ---
 # Blaz Klobucar
 Researcher in urban forestry and remote sensing, SLU Alnarp
 
 ## Short Bio
 
-Blaz Klobucar is a researcher at the Swedish University of Agricultural Sciences (SLU), Department of Landscape Architecture, Planning and Management in Alnarp, where he works in a research group focused on the governance and management of urban green infrastructure.
+Blaz Klobucar (Slovene: Blaž Klobučar) is a researcher at the Swedish University of Agricultural Sciences (SLU), Department of Landscape Architecture, Planning and Management in Alnarp, where he works in a research group focused on the governance and management of urban green infrastructure.
 
 He completed his doctorate at SLU in 2021, supervised by a Nordic team spanning urban forestry management and remote sensing. Since then he has built a research profile that combines quantitative remote sensing with the planning and management context in which urban tree data are used. His current Formas project uses deep learning to map urban tree canopy change from historical black-and-white aerial photographs of Swedish cities.
 
@@ -41,6 +60,8 @@ He completed his doctorate at SLU in 2021, supervised by a Nordic team spanning 
 `2017–2021` PhD in Landscape Planning, Swedish University of Agricultural Sciences (SLU), Department of Landscape Architecture, Planning and Management
 
 `2013` Master's degree in Forestry Science, University of Ljubljana, Biotechnical Faculty
+
+**Further courses:** Spatial Statistics and Remote Sensing for Doctoral Researchers (SLU Alnarp); Introduction to Applied Spatial Statistics (SLU Umeå); Advanced Digital Landscape Analysis (SLU Alnarp); ESF 300 Introduction to Geospatial Information Technology (State University of New York)
 
 ## Research
 
@@ -129,9 +150,3 @@ He completed his doctorate at SLU in 2021, supervised by a Nordic team spanning 
 * Science communication and public speaking
 
 **Languages:** Slovene, Swedish, English (professional proficiency)
-
-## Additional training
-* Spatial Statistics and Remote Sensing for Doctoral Researchers, SLU Alnarp
-* Introduction to Applied Spatial Statistics, SLU Umeå
-* Advanced Digital Landscape Analysis, SLU Alnarp
-* ESF 300 Introduction to Geospatial Information Technology, State University of New York

@@ -49,13 +49,14 @@ body {
 }
 
 .links li { display: contents; }
+.links li.pdf-link { display: none; }
 .links a { font-weight: 500; color: var(--muted); }
 .print-url { display: block; }
 
 a { text-decoration: none; }
 
 .cv-section {
-  padding: 4.5mm 0;
+  padding: 3.5mm 0;
 }
 
 .cv-section h2 {
@@ -71,5 +72,23 @@ li,
 }
 
 .dated + ul { break-before: avoid; }
+
+/* skills in two columns on paper */
+#skills + .section-body ul {
+  columns: 2;
+  column-gap: 6mm;
+}
+
+/* journals on one line on paper */
+#peer-reviewer-for + .section-body ul { margin-bottom: 0; }
+
+#peer-reviewer-for + .section-body li {
+  display: inline;
+  margin: 0;
+  padding: 0;
+}
+
+#peer-reviewer-for + .section-body li::before { content: none; }
+#peer-reviewer-for + .section-body li:not(:last-child)::after { content: "; "; }
 
 .colophon { padding-top: 3mm; }

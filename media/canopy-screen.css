@@ -113,9 +113,31 @@ body {
   font-weight: 500;
 }
 
+.links { align-items: baseline; }
 .links li { margin: 0; padding: 0; }
 .links li::before { content: none; }
 .print-url { display: none; }
+
+/* "Save as PDF" opens the browser's print dialog, which uses the A4 print stylesheet */
+.links button {
+  font: inherit;
+  color: var(--ink);
+  background: none;
+  border: 1px solid var(--wash-deep);
+  border-radius: 3px;
+  padding: 0 0.45em;
+  cursor: pointer;
+}
+
+.links button:hover {
+  background: var(--wash-soft);
+  border-color: var(--ink);
+}
+
+.links button:focus-visible {
+  outline: 2px solid var(--ink);
+  outline-offset: 3px;
+}
 
 /* ---------- links ---------- */
 
@@ -343,4 +365,16 @@ li.dated::before { content: none; }
   }
 
   .dated + ul { margin-left: 0; }
+}
+
+/* phones: contact links in an even 3 × 2 grid instead of a ragged wrap */
+@media screen and (max-width: 30rem) {
+  .links {
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    justify-content: start;
+    gap: 0.6rem 1.4rem;
+  }
+
+  .links li:last-child { justify-self: start; }
 }
